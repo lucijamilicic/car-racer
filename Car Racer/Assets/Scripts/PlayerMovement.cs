@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 0.15f;
+    private float speed = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
