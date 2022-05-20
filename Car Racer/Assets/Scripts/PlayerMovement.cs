@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     void TaskOnClick(){
 
-        speed = 0.15f;
+        speed = 0.1f;
         
 	}
 

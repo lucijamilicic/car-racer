@@ -14,8 +14,7 @@ public class Booster : MonoBehaviour
             Destroy(collision.gameObject);
             player.speed = 0.5f;
             StartCoroutine(speedTime());
-            GetComponent<SpriteRenderer>().enabled = false;
-       }
+        }
    }
 
     IEnumerator speedTime ()
