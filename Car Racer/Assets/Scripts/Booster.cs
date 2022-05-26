@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Booster : MonoBehaviour
@@ -15,7 +16,11 @@ public class Booster : MonoBehaviour
             player.speed = 0.5f;
             StartCoroutine(speedTime());
         }
-   }
+        if (collision.gameObject.tag == "Goal")
+        {
+            SceneManager.LoadScene("EndGameScene");
+        }
+    }
 
     IEnumerator speedTime ()
      {

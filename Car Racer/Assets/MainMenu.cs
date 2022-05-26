@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
-{ 
+{
 
+    void Start() {
+        Time.timeScale = 0f;
+    }
     public void PlayGame() {
-        //ovo ima smisla samo kada je UI druga scena
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
     }
 
     public void QuitGame() {
